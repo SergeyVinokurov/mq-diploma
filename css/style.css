@@ -1,25 +1,41 @@
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  src: url(../fonts/OpenSans-Regular.ttf);
+  src: url("../fonts/OpenSans-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans', sans-serif;
-  src: url(../fonts/OpenSans-Bold.ttf);
+  src: url("../fonts/OpenSans-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+picture {
+  max-width: 100%;
+}
+
+/*Header*/
 .header {
   display: flex;
   justify-content: center;
@@ -33,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   background-color: #666666;
   padding-top: 45px;
+  padding-bottom: 110px;
 }
 
 .header::after {
@@ -47,8 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  width: 100%;
-  max-width: 1560px;
+  width: 1560px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -63,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-.title {
+.header-title {
   margin-top: 290px;
   margin-right: auto;
   margin-left: auto;
@@ -72,8 +88,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .title-first,
-.title-second {
-  font-size: 90px;
+.title-2 {
+  font-size: 5.62rem;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   color: #ffffff;
@@ -83,15 +99,13 @@ h1, h2, h3, h4, h5, h6 {
 .title-two {
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  z-index: 1;
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 220px;
-  margin-bottom: 110px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
@@ -102,9 +116,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   background-color: #5e42b0;
   margin-right: 50px;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-right: 60px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   padding-left: 35px;
   border: none;
   border-radius: 33px;
@@ -118,17 +132,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .button:last-child {
   margin-right: 0;
+  padding-right: 70px;
+  padding-left: 55px;
 }
 
-.button-logo-link {
+.nav-logo {
   width: 40px;
   height: auto;
 }
 
-.button-link {
+.nav-link {
+  font-family: 'Open Sans', sans-serif;
   display: block;
-  margin-top: 9px;
-  margin-left: 23px;
+  margin-top: 5px;
+  margin-left: 19px;
   text-align: left;
 }
 
@@ -138,31 +155,32 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.button-link-btn {
+.brand-name {
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 /*Athlets*/
 .athlets {
   display: flex;
-  margin-top: 27px;
+  padding-top: 27px;
   position: relative;
 }
 
 .athlets-inner {
   display: flex;
   width: 100%;
+  justify-content: flex-end;
 }
 
-.img-athlet {
+.footballer {
   width: 566px;
   height: 908px;
-  margin-left: 200px;
-  position: relative;
+  position: absolute;
+  top: 25px;
+  left: 400px;
   z-index: 1;
 }
 
@@ -174,12 +192,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 83px;
 }
 
-.subtitle {
+.subtitle,
+.teams-subtitle {
   font-family: 'Open Sans', sans-serif;
   font-size: 80px;
   font-weight: 700;
   color: #e7e7e7;
   text-transform: uppercase;
+}
+
+.aside-1:before {
+  content: "";
+  position: absolute;
+  top: 35%;
+  right: 0;
+  bottom: 50px;
+  left: 0;
+  z-index: 0;
+  background-color: #fafafa;
 }
 
 .aside-2:before {
@@ -282,6 +312,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text {
+  width: 100%;
+  max-width: 715px;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   line-height: 28px;
@@ -331,18 +363,17 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
-.photo {
+.basketballer {
   width: 991px;
   height: 815px;
   position: absolute;
   top: -25px;
-  right: -60px;
-  z-index: 0;
+  right: calc(50% - 991px);
+  z-index: 1;
 }
 
 /*Active*/
-.active,
-.work {
+.active {
   display: flex;
   width: 100%;
   max-width: 1560px;
@@ -355,22 +386,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active-photo {
-  width: 960px;
-  height: 730px;
+  display: block;
+  margin-right: 64px;
 }
 
 .active-items {
-  width: 50%;
-  margin-right: 180px;
+  width: 100%;
+  max-width: 765px;
+  margin-right: 133px;
+  margin-left: 64px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.block {
+.active-block {
   display: flex;
   width: 167px;
   height: 155px;
   position: absolute;
   top: 30%;
-  margin-left: -83px;
+  right: 44%;
   background-color: #5e42b0;
 }
 
@@ -393,21 +428,18 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
-.active-items-block {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 245px;
-  margin-left: 128px;
-  width: 634px;
-}
-
 .active-title {
+  font-family: 'Open Sans', sans-serif;
   font-size: 80px;
+  margin-top: 245px;
   font-weight: 700;
   color: #c1c1c1;
   text-transform: uppercase;
 }
 
 .active-text {
+  font-family: 'Open Sans', sans-serif;
+  width: 650px;
   font-size: 24px;
   line-height: 28px;
 }
@@ -421,20 +453,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  justify-content: center;
   position: relative;
 }
 
 .contact-items {
-  width: 50%;
-  margin-right: 100px;
-  margin-left: 235px;
-}
-
-.contact-items-block {
   font-family: 'Open Sans', sans-serif;
+  width: 50%;
+  max-width: 765px;
   margin-top: 245px;
-  width: 636px;
+  margin-right: 140px;
 }
 
 .contact-title {
@@ -445,6 +472,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-text {
+  width: 650px;
   font-size: 24px;
   line-height: 28px;
 }
@@ -455,8 +483,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 155px;
   position: absolute;
   top: 30%;
-  right: 50%;
-  margin-right: -83px;
+  right: 52%;
+  margin-right: -125px;
   background-color: #5e42b0;
 }
 
@@ -479,9 +507,35 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
-.contact-photo {
-  width: 960px;
-  height: 730px;
+.work {
+  display: flex;
+  width: 100%;
+  max-width: 1560px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  justify-content: center;
+  position: relative;
+}
+
+.work-block {
+  display: flex;
+  width: 167px;
+  height: 155px;
+  position: absolute;
+  top: 30%;
+  right: 44%;
+  background-color: #5e42b0;
+}
+
+.work-items {
+  width: 100%;
+  max-width: 765px;
+  margin-right: 133px;
+  margin-left: 64px;
+  padding-right: 75px;
+  padding-left: 15px;
 }
 
 /*Footer*/
@@ -490,6 +544,8 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   width: 100%;
   height: 100%;
+  padding-top: 228px;
+  padding-bottom: 50px;
   box-sizing: border-box;
   position: relative;
   background-image: url("../images/game_1920.jpg");
@@ -511,7 +567,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-container {
-  margin-top: 228px;
   width: 100%;
   max-width: 870px;
   margin-right: auto;
@@ -520,27 +575,28 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-inner {
   display: flex;
+  align-items: center;
   position: relative;
   z-index: 1;
-
 }
 
-.footer-logo {
-  width: 103px;
-  height: 85px;
-  background-color: #553ba2;
-  padding-top: 25px;
+.footer-img {
+  display: block;
+  width: 105px;
+  height: 80px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-right: 12px;
-  padding-bottom: 34px;
   padding-left: 12px;
-  border-radius: 30px;
+  background-color: #553ba2;
+  border-radius: 30px
 }
 
 .footer-item {
   margin-left: 37px;
 }
 
-.title-end {
+.footer-title {
   font-family: 'Open Sans', sans-serif;
   font-size: 80px;
   font-weight: 700;
@@ -550,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.text-end {
+.footer-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
   color: #a496ca;
@@ -571,7 +627,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-logo-text {
   margin-top: 260px;
-  margin-bottom: 50px;
   margin-right: auto;
   margin-left: auto;
   width: 194px;
@@ -579,17 +634,476 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
+/*Media*/
+@media (min-width: 1921px) {
+  .header {
+    background-image: url("../images/football-801047.jpg");
+  }
+
+  .footer {
+    background-image: url("../images/game_1920.jpg");
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .header {
+    background-image: url("../images/football_1280.jpg");
+  }
+
+  .title-two {
+    margin-left: 320px;
+  }
+
+  .footer {
+    background-image: url("../images/game_1280.jpg");
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url("../images/football_767.jpg");
+  }
+
+  .container {
+    width: 100%;
+    max-width: 590px;
+  }
+
+  .header-title {
+    margin-top: 170px;
+  }
+
+  .title-two {
+    margin-left: 60px;
+  }
+
+  .title-first,
+  .title-2 {
+    font-size: 400%;
+  }
+
+  .footballer {
+    margin-left: -280px;
+  }
+
+  .basketballer {
+    left: 50%;
+  }
+
+  .active,
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .active-items {
+    width: 100%;
+    margin-bottom: 110px;
+  }
+
+  .block {
+    top: 55%;
+    margin-left: 0;
+    width: 111px;
+    height: 116px;
+
+  }
+
+  .active-title {
+    margin-top: 110px;
+    margin-left: -5px;
+  }
+
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .contact-items {
+    margin-left: 90px;
+  }
+
+  .contact-items-block {
+    margin-top: 100px;
+    margin-bottom: 90px;
+    margin-left: -65px;
+  }
+
+  .contact-text {
+    margin-left: 5px;
+  }
+
+  .contact-block {
+    top: 55%;
+    left: 6%;
+    width: 111px;
+    height: 116px;
+  }
+
+  .footer {
+    background-image: url("../images/game_767.jpg");
+    padding-top: 125px;
+    padding-bottom: 40px;
+  }
+
+  .footer-inner {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 100px;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-item {
+    margin-top: 95px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-nav {
+    margin-top: 270px;
+    margin-bottom: 70px;
+  }
+
+  .footer-logo-text {
+    margin-top: 73px;
+  }
+}
 
 
+@media (max-width: 640px) {
+  .header {
+    background-image: url("../images/football_767.jpg");
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
 
+  .container {
+    width: 100%;
+    max-width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
+  .logo {
+    width: 137px;
+  }
 
+  .header-title {
+    margin-top: 120px;
+  }
 
+  .title-two {
+    margin-top: 13px;
+    margin-left: 110px;
+  }
 
+  .title-first,
+  .title-2 {
+    font-size: 8.6vmin;
+  }
 
+  .nav {
+    margin-top: 78px;
+  }
 
+  .button {
+    margin-right: 0;
+    margin-bottom: 12px;
+    padding-top: 6px;
+    padding-right: 80px;
+    padding-bottom: 6px;
+    padding-left: 80px;
+  }
 
+  .button:last-child {
+    margin-bottom: 0;
+  }
 
+  .button:nth-child(-3n+2) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+
+  .nav-logo {
+    width: 20px;
+    height: auto;
+  }
+
+  .google {
+    margin-left: -8px;
+  }
+
+  .button-text,
+  .brand-name {
+    font-size: 8px;
+  }
+
+  .link-google {
+    margin-right: 8px;
+  }
+
+  /*  Atlets */
+  .athlets {
+    padding-top: 7px;
+  }
+
+  .footballer {
+    top: 8%;
+    left: 70px;
+  }
+
+  .subtitle {
+    font-size: 50px;
+  }
+
+  .section {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  .subtitle {
+    font-size: 50px;
+    margin-bottom: 300px;
+  }
+
+  .number,
+  .number-last,
+  .number-last-growth {
+    margin-top: 2px;
+  }
+
+  .number-last {
+    margin-top: 0;
+  }
+
+  .suptitle-quality {
+    font-size: 23px;
+  }
+
+  .text,
+  .text-last {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .aside-2:before {
+    top: 55%;
+  }
+
+  .aside-3:before {
+    top: 76%;
+  }
+
+  /*  Teams */
+  .teams-section {
+    width: 100%;
+    margin-top: -40px;
+  }
+
+  .teams-subtitle {
+    margin-bottom: 315px;
+    font-size: 50px;
+  }
+
+  .basketballer {
+    top: 4%;
+    left: 10px;
+  }
+
+  .aside-1:before,
+  .aside-4:before,
+  .aside-5:before {
+    bottom: 60px;
+  }
+
+  /*  Active */
+  .active {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -60px;
+  }
+
+  .be-active {
+    right: 150px;
+  }
+
+  .picture {
+    position: relative;
+  }
+
+  .active,
+  .contact,
+  .work {
+    padding-left: 0;
+  }
+
+  .active-block {
+    width: 70px;
+    height: 70px;
+    top: 93%;
+    left: 170px;
+  }
+
+  .block-number {
+    font-size: 14px;
+  }
+
+  .active-items {
+    padding-left: 45px;
+  }
+
+  .active-title {
+    margin-top: 28px;
+    margin-left: 35px;
+    font-size: 9vmin;
+  }
+
+  .active-text {
+    max-width: 280px;
+    margin-top: 3px;
+    margin-bottom: 80px;
+    margin-left: 37px;
+    font-size: 16px;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .contact-items {
+    width: 100%;
+    margin-top: 28px;
+    margin-left: 20px;
+  }
+
+  .contact-title {
+    font-size: 9vmin;
+  }
+
+  .contact-text {
+    max-width: 280px;
+    margin-top: 3px;
+    margin-bottom: 80px;
+    font-size: 16px;
+  }
+
+  .contact-block {
+    width: 70px;
+    height: 70px;
+    top: 93%;
+    left: 20px;
+  }
+
+  .work {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .work-block {
+    width: 70px;
+    height: 70px;
+    top: 93%;
+    left: 20px;
+  }
+
+  .work-items {
+    margin-right: 65px;
+  }
+
+  /*Footer*/
+
+  .footer {
+    padding-top: 95px;
+    padding-bottom: 7px;
+    background-image: url("../images/game_767.jpg");
+  }
+
+  .footer-container {
+    width: 100%;
+    max-width: 320px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .footer-inner {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-img {
+    width: 56px;
+    height: 46px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-item {
+    margin-top: 82px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-title {
+    font-size: 8.7vmin;
+  }
+
+  .footer-text {
+    font-size: 3.8vmin;
+  }
+
+  .footer-nav {
+    display: block;
+    margin-top: 90px;
+    margin-bottom: 80px;
+  }
+
+  .button {
+    padding-left: 110px;
+    padding-right: 100px;
+  }
+
+  .button:nth-child(-3n+2) {
+    padding-left: 110px;
+    padding-right: 100px;
+  }
+
+  .nav-logo {
+    width: 17px;
+    height: auto;
+  }
+
+  .google {
+    margin-left: 0;
+  }
+
+  .link-google {
+    margin-right: 2px;
+  }
+
+  .nav-link {
+    margin-top: 1px;
+    margin-left: 6px;
+  }
+
+  .button-text {
+    width: 85px;
+    font-size: 8px;
+  }
+
+  .footer-logo-text {
+    margin-top: 73px;
+  }
+}
 
 
 
