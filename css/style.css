@@ -525,7 +525,7 @@ picture {
   height: 155px;
   position: absolute;
   top: 30%;
-  right: 44%;
+  right: 46%;
   background-color: #5e42b0;
 }
 
@@ -948,8 +948,8 @@ picture {
   .active-block {
     width: 70px;
     height: 70px;
-    top: 93%;
-    left: 170px;
+    top: 71%;
+    left: 20px;
   }
 
   .block-number {
@@ -999,7 +999,7 @@ picture {
   .contact-block {
     width: 70px;
     height: 70px;
-    top: 93%;
+    top: 71%;
     left: 20px;
   }
 
@@ -1012,7 +1012,7 @@ picture {
   .work-block {
     width: 70px;
     height: 70px;
-    top: 93%;
+    top: 67%;
     left: 20px;
   }
 
