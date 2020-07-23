@@ -166,21 +166,21 @@ picture {
 .athlets {
   display: flex;
   padding-top: 27px;
-  position: relative;
 }
 
 .athlets-inner {
   display: flex;
   width: 100%;
   justify-content: flex-end;
+  position: relative;
 }
 
 .footballer {
   width: 566px;
   height: 908px;
   position: absolute;
-  top: 25px;
-  left: 400px;
+  top: 0;
+  left: 220px;
   z-index: 1;
 }
 
@@ -188,6 +188,7 @@ picture {
   width: 50%;
   max-width: 714px;
   display: block;
+  margin-right: 15px;
   margin-left: 48px;
   margin-top: 83px;
 }
@@ -204,7 +205,7 @@ picture {
 .aside-1:before {
   content: "";
   position: absolute;
-  top: 35%;
+  top: 25%;
   right: 0;
   bottom: 50px;
   left: 0;
@@ -329,13 +330,9 @@ picture {
 }
 
 /*Teams*/
-.teams {
-  display: flex;
-  position: relative;
-}
-
 .teams-inner {
   display: flex;
+  position: relative;
 }
 
 .teams-section {
@@ -367,8 +364,8 @@ picture {
   width: 991px;
   height: 815px;
   position: absolute;
-  top: -25px;
-  right: 310px;
+  top: -15px;
+  right: 0;
   z-index: 1;
 }
 
@@ -458,7 +455,6 @@ picture {
 
 .contact-items {
   font-family: 'Open Sans', sans-serif;
-  width: 50%;
   max-width: 765px;
   margin-top: 245px;
   margin-right: 140px;
@@ -654,40 +650,135 @@ picture {
     margin-left: 320px;
   }
 
+  .subtitle,
+  .teams-subtitle {
+    font-size: 4.2vmax;
+  }
+
+  .suptitle-quality {
+    font-size: 1.87vmax;
+  }
+
+  .text,
+  .text-last {
+    font-size: 1.1vmax;
+  }
+
+  .active-title,
+  .contact-title {
+    font-size: 4.2vmax;
+  }
+
+  .active-text,
+  .contact-text {
+    font-size: 1.25vmax;
+  }
+
   .footer {
     background-image: url("../images/game_1280.jpg");
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1520px) {
+  .footballer {
+    width: 497px;
+    height: 699px;
+    top: 50px;
+  }
+
+  .basketballer {
+    width: 436px;
+    height: 565px;
+    top: 65px;
+    right: 220px;
   }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
     background-image: url("../images/football_767.jpg");
+    padding-top: 37px;
+    padding-bottom: 90px;
+  }
+
+  .logo {
+    width: 205px;
   }
 
   .container {
     width: 100%;
-    max-width: 590px;
+    max-width: 768px;
+    padding-right: 57px;
+    padding-left: 57px;
   }
 
   .header-title {
     margin-top: 170px;
+    padding-left: 30px;
+    padding-right: 20px;
   }
 
   .title-two {
-    margin-left: 60px;
+    margin-left: 108px;
   }
 
   .title-first,
   .title-2 {
-    font-size: 400%;
+    font-size: 8.3vmax;
+  }
+
+  .nav {
+    margin-top: 300px;
+  }
+
+  .button {
+    padding-left: 55px;
+    margin-right: 40px;
+  }
+
+  .button:last-child {
+    padding-left: 65px;
+  }
+
+  .athlets {
+    padding-top: 70px;
   }
 
   .footballer {
-    margin-left: -280px;
+    left: -140px;
+    top: 30px;
+  }
+
+  .section {
+    margin-top: 0;
+  }
+
+  .subtitle,
+  .teams-subtitle {
+    font-size: 10.4vmax;
+  }
+
+  .aside-1:before {
+    display: none;
+  }
+
+  .aside-2:before {
+    top: 38%
+  }
+
+  .suptitle-quality {
+    font-size: 4.15vmax;
+  }
+
+  .text,
+  .text-last {
+    width: 100%;
+    max-width: 435px;
+    font-size: 2vmax;
   }
 
   .basketballer {
-    left: 50%;
+    left: 40%;
   }
 
   .active,
@@ -696,22 +787,31 @@ picture {
     flex-wrap: wrap;
   }
 
-  .active-items {
-    width: 100%;
-    margin-bottom: 110px;
+  .block {
+    width: 116px;
+    height: 113px;
   }
 
-  .block {
-    top: 55%;
-    margin-left: 0;
-    width: 111px;
-    height: 116px;
+  .active-block {
+    top: 51.5%;
+    right: 80%;
+  }
 
+  .active-items {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .active-title {
-    margin-top: 110px;
+    margin-top: 0;
     margin-left: -5px;
+    font-size: 10.4vmax;
+  }
+
+  .active-text,
+  .contact-text {
+    font-size: 3.1vmax;
   }
 
   .contact {
@@ -721,13 +821,9 @@ picture {
   }
 
   .contact-items {
-    margin-left: 90px;
-  }
-
-  .contact-items-block {
-    margin-top: 100px;
-    margin-bottom: 90px;
-    margin-left: -65px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    margin-left: 20px;
   }
 
   .contact-text {
@@ -735,10 +831,18 @@ picture {
   }
 
   .contact-block {
-    top: 55%;
-    left: 6%;
-    width: 111px;
-    height: 116px;
+    top: 50.5%;
+    left: 5.3%;
+  }
+
+  .work-block {
+    top: 50%;
+    right: 81%;
+  }
+
+  .work-items {
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   .footer {
@@ -774,7 +878,6 @@ picture {
     margin-top: 73px;
   }
 }
-
 
 @media (max-width: 640px) {
   .header {
@@ -1021,7 +1124,6 @@ picture {
   }
 
   /*Footer*/
-
   .footer {
     padding-top: 95px;
     padding-bottom: 7px;
@@ -1104,7 +1206,6 @@ picture {
     margin-top: 73px;
   }
 }
-
 
 
 

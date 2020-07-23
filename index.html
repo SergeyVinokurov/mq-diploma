@@ -15,12 +15,7 @@
         <img src="svg/surface_logo_text.svg" alt="logo_text">
       </div>
       <div class="header-title">
-        <div class="title">
-          <h1 class="title-first">be recruited</h1>
-        </div>
-        <span class="title-two">
-          <h1 class="title-2">play college sports</h1>
-        </span>
+        <h1 class="title-first">be recruited <span class="title-two title-2">play college sports</span></h1>
       </div>
       <nav class="nav">
         <a class="button" href="#0">
@@ -40,22 +35,22 @@
       </nav>
     </div>
   </header>
+
   <main class="content">
     <div class="athlets">
       <div class="container">
         <div class="athlets-inner">
           <picture class="footballer">
-            <source media="(min-width: 320px) and (max-width: 640px)" srcset="images/footballer_192.png">
-            <source media="(min-width: 641px)" srcset="images/footballer_566.png">
+            <source media="(max-width: 640px)" srcset="images/footballer_192.png">
+            <source media="(min-width: 641px) and (max-width: 1520px)" srcset="images/footballer_497.png">
+            <source media="(min-width: 1521px) and (max-width: 1920px)" srcset="images/footballer_566.png">
             <img class="img-athlet" src="images/footballer_566.png" alt="Footballer">
           </picture>
-
           <section class="section">
             <h2 class="subtitle">athlets</h2>
             <aside class="aside-1">
               <div class="aside-inner">
                 <div class="aside-suptitle">
-
                   <div class="number">01</div>
                   <h3 class="suptitle-quality">connection</h3>
                 </div>
@@ -94,8 +89,9 @@
           <section class="teams-section">
             <h2 class="teams-subtitle">players</h2>
             <picture class="basketballer">
-              <source media="(min-width: 320px) and (max-width: 640px)" srcset="images/basketballer_302.png">
-              <source media="(min-width: 641px)" srcset="images/basketballer_991.png">
+              <source media="(max-width: 640px)" srcset="images/basketballer_302.png">
+              <source media="(min-width: 641px) and (max-width: 960px)" srcset="images/basketballer_436.png">
+              <source media="(min-width: 961px) and (max-width: 1920px)" srcset="images/basketballer_991.png">
               <img src="images/basketballer_991.png" alt="Basketballer">
             </picture>
             <aside class="aside-1">
@@ -130,7 +126,7 @@
               </div>
             </aside>
           </section>
-        </div><!-- teams-inner -->
+        </div><!-- teams-inner <-->
       </div>
     </div>
 
@@ -142,7 +138,7 @@
         <source media="(min-width: 1921px)" srcset="images/be-active_1024.jpg">
         <img class="active-photo" src="images/be-active_1024.jpg" alt="Sportsman on a yacht">
       </picture>
-      <div class="active-block">
+      <div class="block active-block">
         <div class="block-number">01</div>
       </div>
       <div class="active-items">
@@ -154,11 +150,9 @@
     </section>
     <section class="contact">
       <div class="contact-items">
-        <div class="contact-items-block">
-          <h2 class="contact-title">find contact</h2>
-          <p class="contact-text">Contact others to find right coach or athlete you are looking for.
-          </p>
-        </div>
+        <h2 class="contact-title">find contact</h2>
+        <p class="contact-text">Contact others to find right coach or athlete you are looking for.
+        </p>
       </div>
       <picture class="find-contact picture">
         <source media="(max-width: 640px)" srcset="images/find-contact_640.jpg">
@@ -167,7 +161,7 @@
         <source media="(min-width: 1921px)" srcset="images/find-contact_1024.jpg">
         <img class="contact-photo" src="images/find-contact_1024.jpg" alt="Team coach">
       </picture>
-      <div class="contact-block">
+      <div class="block contact-block">
         <div class="block-number">02</div>
       </div>
     </section>
@@ -179,72 +173,48 @@
         <source media="(min-width: 1921px)" srcset="images/work-it_1024.jpg">
         <img class="active-photo" src="images/work-it_1024.jpg" alt="Winning team">
       </picture>
-      <div class="work-block">
+      <div class="block work-block">
         <div class="block-number">03</div>
       </div>
-      <div class="active-items work-items">
+      <div class="work-items">
         <h2 class="active-title">work it</h2>
         <p class="active-text">
           Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this enjoyable experience.</p>
       </div>
     </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-inner">
-          <a class="footer-logo" href="#0" data-scroll="#header">
-            <img class="footer-img" src="svg/surface_logo.svg" alt="Logo">
-          </a>
-          <div class="footer-item">
-            <h2 class="footer-title">download app</h2>
-            <p class="footer-text">show everyone what you can do!</p>
-          </div>
-        </div>
-        <nav class="footer-nav">
-          <a class="button" href="#0">
-            <img class="nav-logo" src="svg/apple_logo_black.svg" alt="Logo Apple">
-            <div class="nav-link">
-              <div class="button-text">download on the</div>
-              <div class="brand-name">app store</div>
-            </div>
-          </a>
-          <a class="button" href="#0">
-            <img class="nav-logo" src="svg/google-play.svg" alt="Logo Google">
-            <div class="nav-link">
-              <div class="button-text">get it on</div>
-              <div class="brand-name">google play</div>
-            </div>
-          </a>
-        </nav>
-        <div class="footer-logo-text">
-          <img src="svg/surface_logo_text.svg" alt="logo_text">
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-inner">
+        <a class="footer-logo" href="#0" data-scroll="#header">
+          <img class="footer-img" src="svg/surface_logo.svg" alt="Logo">
+        </a>
+        <div class="footer-item">
+          <h2 class="footer-title">download app</h2>
+          <p class="footer-text">show everyone what you can do!</p>
         </div>
       </div>
-    </footer>
-    </body>
+      <nav class="footer-nav">
+        <a class="button" href="#0">
+          <img class="nav-logo" src="svg/apple_logo_black.svg" alt="Logo Apple">
+          <div class="nav-link">
+            <div class="button-text">download on the</div>
+            <div class="brand-name">app store</div>
+          </div>
+        </a>
+        <a class="button" href="#0">
+          <img class="nav-logo" src="svg/google-play.svg" alt="Logo Google">
+          <div class="nav-link">
+            <div class="button-text">get it on</div>
+            <div class="brand-name">google play</div>
+          </div>
+        </a>
+      </nav>
+      <div class="footer-logo-text">
+        <img src="svg/surface_logo_text.svg" alt="logo_text">
+      </div>
+    </div>
+  </footer>
+</body>
 
-    </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</html>
