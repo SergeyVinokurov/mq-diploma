@@ -368,7 +368,7 @@ picture {
   height: 815px;
   position: absolute;
   top: -25px;
-  right: calc(50% - 991px);
+  right: 310px;
   z-index: 1;
 }
 
@@ -525,14 +525,14 @@ picture {
   height: 155px;
   position: absolute;
   top: 30%;
-  right: 46%;
+  right: 44%;
   background-color: #5e42b0;
 }
 
 .work-items {
   width: 100%;
   max-width: 765px;
-  margin-right: 133px;
+  margin-right: 70px;
   margin-left: 64px;
   padding-right: 75px;
   padding-left: 15px;
