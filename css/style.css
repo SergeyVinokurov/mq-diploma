@@ -730,6 +730,7 @@ picture {
 
   .text,
   .text-last {
+    width: 400px;
     font-size: 1.1vmax;
   }
 
@@ -749,7 +750,7 @@ picture {
   }
 
   .contact-items {
-    margin-left: 50px;
+    margin-left: 27px;
   }
 
   .contact-text {
