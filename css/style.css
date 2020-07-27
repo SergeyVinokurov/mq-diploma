@@ -111,6 +111,8 @@ picture {
   margin-left: auto;
   position: relative;
   z-index: 1;
+  -vebkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .button {
