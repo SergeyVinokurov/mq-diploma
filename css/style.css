@@ -125,6 +125,8 @@ picture {
   border-radius: 33px;
   cursor: pointer;
   transition: background-color 0.1s linear;
+  -vebkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .button:hover {
@@ -687,18 +689,32 @@ picture {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1920px) {
+@media (min-width: 1201px) and (max-width: 1920px) {
   .header {
     background-image: url("../images/football_1280.jpg");
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1340px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .title-two {
     margin-left: 320px;
   }
 
+/*  Athlets */
   .athlets-1:before,
   .teams-1:before {
     display: none;
+  }
+
+  .footballer {
+    left: 30px;
   }
 
   .subtitle,
@@ -715,13 +731,27 @@ picture {
     font-size: 1.1vmax;
   }
 
+/*  Active */
+  .active-items {
+    width: 100%;
+    max-width: 700px;
+  }
+
   .active-title,
   .contact-title {
     font-size: 4.2vmax;
   }
 
-  .active-text,
+  .active-text {
+    font-size: 1.25vmax;
+  }
+
+  .contact-items {
+    margin-left: 50px;
+  }
+
   .contact-text {
+    width: 37vw;
     font-size: 1.25vmax;
   }
 
@@ -729,6 +759,47 @@ picture {
     background-image: url("../images/game_1280.jpg");
   }
 }
+
+@media (min-width: 961px) and (max-width: 1200px) {
+  .container {
+    width: 1080px;
+  }
+
+  .title-first,
+  .title-two {
+    font-size: 7.5vmax;
+  }
+
+  .title-two {
+    margin-left: 400px;
+  }
+
+  .footballer {
+    left: 80px;
+  }
+
+  .teams-content {
+    max-width: 400px;
+  }
+
+  .basketballer {
+    left: 30%;
+  }
+
+  .active-text {
+    width: 400px;
+    margin-right: 300px;
+  }
+
+  .contact-text {
+    max-width: 385px;
+  }
+
+  .contact-block {
+    right: 55%;
+  }
+}
+
 
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
@@ -776,22 +847,9 @@ picture {
     padding-left: 65px;
   }
 
+/*  Athlets */
   .athlets {
     padding-top: 70px;
-  }
-
-  .footballer {
-    left: -140px;
-    top: 30px;
-  }
-
-  .section {
-    margin-top: 0;
-  }
-
-  .subtitle,
-  .teams-subtitle {
-    font-size: 10.4vmax;
   }
 
   .athlets-1:before,
@@ -799,25 +857,51 @@ picture {
     display: none;
   }
 
-  .athlets-2:before,
-  .teams-2:before {
-    top: 38%
+  .athlets-2:before {
+    top: 40%
+  }
+
+  .athlets-inner {
+    padding-top: 0;
+  }
+
+  .section {
+    max-width: 350px;
+    margin-top: 0;
+    margin-right: 70px;
+  }
+
+  .text,
+  .text-last {
+    max-width: 350px;
+  }
+
+  .footballer {
+    left: -140px;
+    top: 30px;
+    font-size: 2vmax;
+  }
+
+  .subtitle,
+  .teams-subtitle {
+    font-size: 10.4vmax;
   }
 
   .suptitle-quality {
     font-size: 4.15vmax;
   }
 
-  .text,
-  .text-last {
-    width: 100%;
-    max-width: 435px;
-    font-size: 2vmax;
+  /*  Teams */
+  .teams {
+    padding-top: 73px;
   }
 
-  /*  Teams */
+  .teams-2:before {
+    top: 49%;
+  }
+
   .basketballer {
-    left: 40%;
+    left: 36%;
     top: 0;
   }
 
@@ -947,8 +1031,8 @@ picture {
   }
 
   .title-first,
-  .title-2 {
-    font-size: 8.6vmin;
+  .title-two {
+    font-size: 7.2vmin;
   }
 
   .nav {
@@ -1040,6 +1124,7 @@ picture {
 
   .text,
   .text-last {
+    max-width: 280px;
     font-size: 15px;
     line-height: 18px;
   }
@@ -1088,7 +1173,7 @@ picture {
   }
 
   .be-active {
-    right: 80px;
+    right: 120px;
   }
 
   .picture {
@@ -1137,6 +1222,7 @@ picture {
 
   .contact-items {
     width: 100%;
+    max-width: 280px;
     margin-top: 28px;
     margin-left: 20px;
   }
