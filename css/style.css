@@ -111,12 +111,11 @@ picture {
   margin-left: auto;
   position: relative;
   z-index: 1;
-  -vebkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .button {
   display: flex;
+  align-items: flex-start;
   background-color: #5e42b0;
   margin-right: 50px;
   padding-top: 10px;
@@ -127,8 +126,6 @@ picture {
   border-radius: 33px;
   cursor: pointer;
   transition: background-color 0.1s linear;
-  -vebkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .button:hover {
@@ -750,7 +747,7 @@ picture {
   }
 
   .contact-items {
-    margin-left: 37px;
+    margin-left: 40px;
   }
 
   .contact-text {
