@@ -107,8 +107,6 @@ picture {
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 220px;
-  margin-right: auto;
-  margin-left: auto;
   position: relative;
   z-index: 1;
 }
@@ -146,7 +144,6 @@ picture {
 .nav-link {
   font-family: 'Open Sans', sans-serif;
   display: block;
-  margin-top: 5px;
   margin-left: 19px;
   text-align: left;
 }
@@ -207,15 +204,17 @@ picture {
   width: 100%;
   padding-top: 100px;
   justify-content: flex-end;
+}
+
+.athlets-image {
+  width: 566px;
   position: relative;
 }
 
 .footballer {
-  width: 566px;
-  height: 908px;
+  max-width: 100%;
   position: absolute;
-  top: 27px;
-  left: 220px;
+  right: 48px;
   z-index: 1;
 }
 
@@ -224,7 +223,6 @@ picture {
   max-width: 714px;
   display: block;
   margin-right: 15px;
-  margin-left: 48px;
 }
 
 .subtitle,
@@ -400,14 +398,17 @@ picture {
   border-radius: 2px;
 }
 
-
-
-.basketballer {
+.teams-image {
   width: 991px;
   height: 815px;
+  position: relative;
+}
+
+.basketballer {
+  max-width: 100%;
   position: absolute;
   top: -90px;
-  left: 40%;
+  left: -15%;
   z-index: 1;
 }
 
@@ -706,14 +707,10 @@ picture {
     margin-left: 520px;
   }
 
-/*  Athlets */
+  /*  Athlets */
   .athlets-1:before,
   .teams-1:before {
     display: none;
-  }
-
-  .footballer {
-    left: 30px;
   }
 
   .subtitle,
@@ -731,7 +728,7 @@ picture {
     font-size: 1.1vmax;
   }
 
-/*  Active */
+  /*  Active */
   .active-items {
     width: 100%;
     max-width: 700px;
@@ -774,8 +771,13 @@ picture {
     margin-left: 400px;
   }
 
+  .athlets-1:before,
+  .teams-1:before {
+    display: none;
+  }
+
   .footballer {
-    left: 80px;
+    right: -20px;
   }
 
   .teams-content {
@@ -783,7 +785,7 @@ picture {
   }
 
   .basketballer {
-    left: 30%;
+    left: 0;
   }
 
   .active-text {
@@ -847,7 +849,7 @@ picture {
     padding-left: 65px;
   }
 
-/*  Athlets */
+  /*  Athlets */
   .athlets {
     padding-top: 70px;
   }
@@ -877,7 +879,7 @@ picture {
   }
 
   .footballer {
-    left: -140px;
+    right: 170px;
     top: 30px;
     font-size: 2vmax;
   }
@@ -901,8 +903,8 @@ picture {
   }
 
   .basketballer {
-    left: 36%;
-    top: 0;
+    top: 40px;
+    left: 34px;
   }
 
   .active,
@@ -1003,6 +1005,25 @@ picture {
   }
 }
 
+@media (min-width: 641px) and (max-width: 755px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .button {
+    padding-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 12px;
+  }
+
+  .button:last-child {
+    margin-right: 0;
+    padding-left: 40px;
+    padding-right: 96px;
+  }
+}
+
 @media (max-width: 640px) {
   .header {
     background-image: url("../images/football_767.jpg");
@@ -1027,7 +1048,7 @@ picture {
 
   .title-two {
     margin-top: 13px;
-    margin-left: 110px;
+    margin-left: 100px;
   }
 
   .title-first,
@@ -1098,7 +1119,7 @@ picture {
 
   .footballer {
     top: 8%;
-    left: 70px;
+    left: 100px;
   }
 
   .subtitle {
@@ -1161,7 +1182,7 @@ picture {
 
   .basketballer {
     top: 6%;
-    left: -10px;
+    left: -260%;
   }
 
   /*  Active */
