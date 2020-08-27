@@ -31,10 +31,6 @@ a {
   text-decoration: none;
 }
 
-picture {
-  max-width: 100%;
-}
-
 /*Header*/
 .header {
   display: flex;
@@ -188,7 +184,6 @@ picture {
   text-transform: uppercase;
 }
 
-
 .section-inner {
   display: block;
 }
@@ -286,11 +281,6 @@ picture {
   display: block;
 }
 
-.teams-subtitle {
-  margin-left: 10%;
-  margin-bottom: 38px;
-}
-
 .teams-inner:nth-child(3) {
   background-color: #f6f4fa;
 }
@@ -299,8 +289,16 @@ picture {
   background-color: #0a0e34;
 }
 
+.teams-subtitle {
+  margin-left: 12.6%;
+  margin-bottom: 38px;
+}
+
 .teams-content {
-  margin-left: 10%;
+  width: 100%;
+  max-width: 1530px;
+  padding-left: 15px;
+  margin-left: 12%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -336,17 +334,27 @@ picture {
 .section {
   display: flex;
   width: 100%;
-  max-width: 1530px;
+  max-width: 1488px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
+}
+
+.section-contact {
+  justify-content: flex-start;
+}
+
+.picture {
+  position: absolute;
+  right: 50%;
 }
 
 .active-photo {
   display: block;
+  max-width: 100%;
 }
 
 .block {
@@ -354,9 +362,17 @@ picture {
   width: 166px;
   height: 156px;
   position: absolute;
-  top: 31%;
+  top: 23%;
   left: calc(50% - 83px);
   background-color: #5e42b0;
+}
+
+.block-second {
+  top: 27%;
+}
+
+.block-third {
+  top: 25%;
 }
 
 .block-number {
@@ -380,9 +396,13 @@ picture {
 
 .section-items {
   max-width: 765px;
-  margin-top: 16%;
-  margin-right: 15vmax;
-  padding-left: 125px;
+  margin-top: 7vw;
+  margin-bottom: 6.3vw;
+}
+
+.section-work {
+  margin-top: 9vw;
+  margin-bottom: 6.4vw;
 }
 
 .section-title {
@@ -394,7 +414,7 @@ picture {
 }
 
 .section-text {
-  margin-top: 87px;
+  margin-top: 60px;
   margin-left: 4px;
   font-family: 'Open Sans', sans-serif;
   width: 605px;
@@ -405,9 +425,16 @@ picture {
 .contact-items {
   font-family: 'Open Sans', sans-serif;
   max-width: 765px;
-  margin-top: 267px;
-  margin-right: 7%;
-  margin-left: 16vmax;
+  margin-top: 9vw;
+  margin-bottom: 8vw;
+}
+
+.picture-contact {
+  width: 50%;
+  height: 779px;
+  position: absolute;
+  top: 0;
+  left: 50%;
 }
 
 /*Footer*/
@@ -524,15 +551,11 @@ picture {
 
   .container {
     width: 100%;
-    max-width: 1560px;
+    max-width: 1530px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-  }
-
-  .title-two {
-    margin-left: 44%;
   }
 
   /*  Athlets */
@@ -552,36 +575,56 @@ picture {
   }
 
   /*  Active */
-  .picture {
-    width: calc(75% + 13px);
+  .section-items {
+    margin-top: 10vw;
+    margin-bottom: 11.3vw;
   }
 
-  .section-items {
-    margin-top: 250px;
-    margin-right: 16vmax;
+  .section-work {
+    margin-bottom: 117px;
   }
 
   .contact-items {
     font-family: 'Open Sans', sans-serif;
-    width: 50%;
     max-width: 765px;
-    margin-top: 245px;
-    margin-right: 0;
-    padding-right: 2%;
-    margin-left: 21vmax;
+    margin-top: 177px;
+    margin-bottom: 150px;
   }
 
   .section-title {
-    font-size: 4.4rem;
+    font-size: 80px;
   }
 
   .section-text {
-    width: 590px;
-    font-size: 1.26vw;
+    width: 33vmax;
+    font-size: 24px;
   }
 
   .footer {
     background-image: url("../images/game_1280.jpg");
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1400px) {
+  .section-items {
+    margin-bottom: 12vw;
+  }
+
+  .contact-items {
+    margin-bottom: 9.4vw;
+  }
+
+  .section-work {
+    margin-bottom: 6em;
+  }
+
+  .section-title {
+    font-size: 5vw;
+  }
+
+  .section-text {
+    width: 33vmax;
+    font-size: 1.6vw;
   }
 }
 
@@ -593,10 +636,6 @@ picture {
   .title-first,
   .title-two {
     font-size: 7.5vmax;
-  }
-
-  .title-two {
-    margin-left: 400px;
   }
 
   .footballer {
@@ -622,18 +661,19 @@ picture {
 
   .text,
   .text-last {
-    max-width: 525px;
+    max-width: 480px;
     font-size: 16px;
   }
 
   /* Teams */
   .teams-subtitle {
-    margin-left: 2%;
+    margin-left: 10.5%;
   }
 
 
   .teams-content {
-    margin-left: 2%;
+    max-width: 1200px;
+    margin-left: 0;
   }
 
   .basketballer {
@@ -646,39 +686,36 @@ picture {
     max-width: 1200px;
   }
 
-  .picture {
-    max-width: 100%;
+  .block {
+    width: 150px;
+    height: 140px;
   }
 
   .section-items {
-    width: calc(50% + 20px);
-    margin-top: 208px;
-    margin-right: 25vmax;
-    margin-bottom: 80px;
-    padding-left: 9vmax;
-  }
-
-  .section-text {
-    width: 400px;
-    font-size: 18px;
+    margin-top: 12vw;
+    margin-bottom: 10.7vw;
   }
 
   .contact-items {
-    margin-top: 170px;
-    margin-right: 2vmax;
-    margin-bottom: 40px;
-    margin-left: 310px;
+    margin-top: 12vw;
+    margin-bottom: 10.5vw;
+  }
+
+  .section-work {
+    margin-top: 12vw;
+    margin-bottom: 7vw;
+  }
+
+  .section-text,
+  .text-contact {
+    width: 40vmax;
+    margin-top: 2em;
   }
 
   .section-title {
-    font-size: 70px;
-  }
-
-  .text-contact {
-    width: 40vmax;
+    font-size: 4.7vmax;
   }
 }
-
 
 @media (min-width: 641px) and (max-width: 960px) {
   .header {
@@ -767,9 +804,15 @@ picture {
     padding-top: 70px;
   }
 
-  .teams-subtitle,
+  .teams-subtitle {
+    margin-left: 3%;
+  }
+
   .teams-content {
-    margin-left: 13%;
+    width: 100%;
+    max-width: 768px;
+    margin-left: 0;
+    padding-left: 25px;
   }
 
   .basketballer {
@@ -782,80 +825,65 @@ picture {
     width: 100%;
     max-width: 960px;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .picture {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .picture-contact {
+    width: 100%;
+    position: absolute;
+  }
+
+  .block {
+    width: 116px;
+    height: 113px;
+    top: 69vw;
+    left: calc(8% - 58px);
+  }
+
+  .block-second {
+    top: 69vw;
+  }
+
+  .block-third {
+    top: 60%;
   }
 
   .section-items {
-    margin-top: 65px;
-    margin-bottom: 70px;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 73px;
+    margin-bottom: 95px;
+    padding-top: 730px;
+  }
+
+  .section-title {
+    font-size: 8.7vmax;
   }
 
   .section-text {
     margin-top: 20px;
+    font-size: 22px;
   }
 
   .section-contact {
     flex-wrap: wrap-reverse;
   }
 
-  .block {
-    width: 116px;
-    height: 113px;
-    top: 54%;
-    left: calc(24% - 83px);
-  }
-
-  .active-block {
-    top: 51.5%;
-    right: 80%;
-  }
-
-  .active-items {
-    width: 100%;
-    margin-top: 80px;
-    margin-bottom: 100px;
-  }
-
-  .active-title {
-    margin-top: 0;
-    margin-left: -5px;
-    font-size: 10.4vmax;
-  }
-
-  .active-text,
-  .contact-text {
-    font-size: 3.1vmax;
-  }
-
-  .contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column-reverse;
+  .section-work {
+    padding-top: 720px;
   }
 
   .contact-items {
-    margin-top: 65px;
-    margin-right: 3%;
-    margin-bottom: 100px;
-    margin-left: 20px;
-  }
-
-  .contact-text {
-    margin-left: 5px;
-  }
-
-  .contact-block {
-    top: 50.5%;
-    left: 5.3%;
-  }
-
-  .work-block {
-    top: 50%;
-    right: 81%;
-  }
-
-  .work-items {
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 0;
+    margin-bottom: 95px;
+    padding-top: 83vw;
   }
 
   .footer {
@@ -892,6 +920,35 @@ picture {
   }
 }
 
+@media (min-width: 641px) and (max-width: 868px) {
+
+  /* Active */
+  .block {
+    top: 69vw;
+    left: calc(11% - 58px);
+  }
+
+  .block-second {
+    top: 68vw;
+  }
+
+  .block-third {
+    top: 68vw;
+  }
+
+  .section-items {
+    padding-top: 78vw;
+  }
+
+  .section-work {
+    padding-top: 80vw;
+  }
+
+  .contact-items {
+    padding-top: 87vw;
+  }
+}
+
 @media (min-width: 641px) and (max-width: 755px) {
   .container {
     padding-right: 20px;
@@ -920,7 +977,7 @@ picture {
 
   .container {
     width: 100%;
-    max-width: 320px;
+    max-width: 280px;
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -935,7 +992,7 @@ picture {
 
   .title-two {
     margin-top: 13px;
-    margin-left: 100px;
+    margin-left: 22%;
   }
 
   .title-first,
@@ -951,9 +1008,9 @@ picture {
     margin-right: 0;
     margin-bottom: 12px;
     padding-top: 6px;
-    padding-right: 80px;
+    padding-right: 85px;
     padding-bottom: 6px;
-    padding-left: 80px;
+    padding-left: 85px;
   }
 
   .button:last-child {
@@ -961,8 +1018,8 @@ picture {
   }
 
   .button:nth-child(-3n+2) {
-    padding-right: 90px;
-    padding-left: 90px;
+    padding-right: 85px;
+    padding-left: 85px;
   }
 
   .nav-logo {
@@ -1029,7 +1086,7 @@ picture {
 
   .text,
   .text-last {
-    width: 94%;
+    width: 81vw;
     font-size: 15px;
     line-height: 18px;
   }
@@ -1071,6 +1128,17 @@ picture {
     margin-top: 0;
     margin-left: 0;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .picture {
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+
+  .picture-contact {
+    width: 100%;
   }
 
   .section-contact {
@@ -1080,37 +1148,31 @@ picture {
   .block {
     width: 70px;
     height: 70px;
-    left: 17%;
-  }
+    top: 108vw;
+    left: 3%;
 
-  .block-first {
-    top: 73%;
   }
 
   .block-second {
-    top: 70%;
-  }
-
-  .block-third {
-    top: 71%;
+    top: 108vw;
+    left: 3%;
   }
 
   .block-number {
     font-size: 14px;
   }
 
-  .section-items,
-  .contact-items {
-    margin-top: 20px;
-    margin-bottom: 50px;
+  .section-items {
+    padding-top: 121vw;
+    margin-bottom: 73px;
   }
 
   .section-title {
-    font-size: 11vmin;
+    font-size: 10vmin;
   }
 
   .section-text {
-    margin-top: 0;
+    margin-top: 10px;
     width: 85vmin;
     font-size: 16px;
     line-height: 20px;
@@ -1118,9 +1180,13 @@ picture {
 
   .contact-items {
     width: 100%;
-    max-width: 280px;
-    margin-top: 28px;
-    margin-left: 48px;
+    max-width: 320px;
+    padding-top: 120vw;
+    margin-bottom: 73px;
+  }
+
+  .section-work {
+    padding-top: 120vw;
   }
 
   .contact-title {
@@ -1175,16 +1241,6 @@ picture {
     display: block;
     margin-top: 90px;
     margin-bottom: 80px;
-  }
-
-  .button {
-    padding-left: 110px;
-    padding-right: 100px;
-  }
-
-  .button:nth-child(-3n+2) {
-    padding-left: 110px;
-    padding-right: 100px;
   }
 
   .nav-logo {
