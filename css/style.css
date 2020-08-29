@@ -158,6 +158,11 @@ a {
   text-transform: uppercase;
 }
 
+/*Main*/
+.content {
+  overflow: hidden;
+}
+
 /*Athlets*/
 .athlets {
   display: block;
@@ -297,8 +302,9 @@ a {
 .teams-content {
   width: 100%;
   max-width: 1530px;
+  margin-right: auto;
+  margin-left: auto;
   padding-left: 15px;
-  margin-left: 12%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -335,12 +341,18 @@ a {
   display: flex;
   width: 100%;
   max-width: 1488px;
+  height: 577px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
   justify-content: flex-end;
+  align-items: center;
   position: relative;
+}
+
+.section-active {
+  height: 507px;
 }
 
 .section-contact {
@@ -349,6 +361,7 @@ a {
 
 .picture {
   position: absolute;
+  top: 0;
   right: 50%;
 }
 
@@ -575,13 +588,20 @@ a {
   }
 
   /*  Active */
+  .section-active {
+    height: 577px;
+  }
+
   .section-items {
-    margin-top: 10vw;
-    margin-bottom: 11.3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 577px;
+    padding-right: 10px;
   }
 
   .section-work {
-    margin-bottom: 117px;
+    margin-bottom: 110px;
   }
 
   .contact-items {
@@ -605,26 +625,22 @@ a {
   }
 }
 
-@media (min-width: 961px) and (max-width: 1400px) {
-  .section-items {
-    margin-bottom: 12vw;
-  }
-
-  .contact-items {
-    margin-bottom: 9.4vw;
-  }
-
-  .section-work {
-    margin-bottom: 6em;
+@media (min-width: 961px) and (max-width: 1490px) {
+  .section {
+    height: 38.8vw;
   }
 
   .section-title {
-    font-size: 5vw;
+    font-size: 5.5vw;
   }
 
   .section-text {
     width: 33vmax;
     font-size: 1.6vw;
+  }
+
+  .text-contact {
+    margin-top: 3.5vw;
   }
 }
 
@@ -692,28 +708,26 @@ a {
   }
 
   .section-items {
+    display: block;
     margin-top: 12vw;
     margin-bottom: 10.7vw;
+    padding-right: 10px;
   }
 
   .contact-items {
     margin-top: 12vw;
-    margin-bottom: 10.5vw;
+    margin-bottom: 10vw;
   }
 
   .section-work {
     margin-top: 12vw;
-    margin-bottom: 7vw;
+    margin-bottom: 7.2vw;
   }
 
   .section-text,
   .text-contact {
-    width: 40vmax;
+    width: 36vmax;
     margin-top: 2em;
-  }
-
-  .section-title {
-    font-size: 4.7vmax;
   }
 }
 
@@ -823,6 +837,7 @@ a {
   /*  Active */
   .section {
     width: 100%;
+    height: 100%;
     max-width: 960px;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -833,11 +848,6 @@ a {
     position: absolute;
     right: 0;
     left: 0;
-  }
-
-  .picture-contact {
-    width: 100%;
-    position: absolute;
   }
 
   .block {
@@ -870,10 +880,6 @@ a {
   .section-text {
     margin-top: 20px;
     font-size: 22px;
-  }
-
-  .section-contact {
-    flex-wrap: wrap-reverse;
   }
 
   .section-work {
@@ -1124,6 +1130,7 @@ a {
   /* Active */
   .section {
     width: 100%;
+    height: 100%;
     max-width: 640px;
     margin-top: 0;
     margin-left: 0;
